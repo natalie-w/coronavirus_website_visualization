@@ -16,8 +16,14 @@ d3.csv("/data/covid_19_data.csv", function(data) {
 	// parse date time
 	var parseDate = d3.timeParse("%m/%d/%Y");
 
+	// formate date
+	var formatDate = d3.timeFormat("%b %d, %Y");
+
 	// format numbers for readability
 	var formatNum = d3.format(",");
+
+	// find newest date
+	var latest = d3.max(data.map(function(d) {return parseDate(d.ObservationDate)}));
 
 	// format data
 	data.forEach(function(d) {
@@ -27,11 +33,18 @@ d3.csv("/data/covid_19_data.csv", function(data) {
 		d.recoveries = +d.Recovered,
 		d.fatalities = +d.Deaths
 
-		cases += d.cases
-		recoveries += d.recoveries
-		fatalities += d.fatalities
+		// only add newest counts for each country
+		if ((d.date.getFullYear() == latest.getFullYear()) &&
+			(d.date.getMonth() === latest.getMonth()) &&
+			(d.date.getDate() == latest.getDate())) {
+			cases += d.cases
+			recoveries += d.recoveries
+			fatalities += d.fatalities
+		}
+		
 	});
 
+	// insert cases, recoveries, and fatalities metrics into cards
 	var counts = [cases, recoveries, fatalities];
 	var classes = ["#total_cases", "#recover", "#fatal"];
 
@@ -59,38 +72,26 @@ d3.csv("/data/covid_19_data.csv", function(data) {
 	     .attr("fill", "dark-gray");
 	}
 
-	// update days
-	var today = new Date()
-	var first = new Date("01/22/2020")
-	var difference = today.getTime() - first.getTime()
-	var days = Math.round(difference/(1000 * 60  * 60  * 24), 2)
-
-
+	// updated on card
 	var svg = d3.select("#days")
 			.append("svg")
 			.attr("width", 150)
 			.attr("height", 50);
 
-		var text = svg.selectAll("text")
-			.data(circleData)
-			.enter()
-			.append("text");
+	var text = svg.selectAll("text")
+		.data(circleData)
+		.enter()
+		.append("text");
 
-		var textLabels = text
-	     .attr("x", 10)
-	     .attr("y", 40)
-	     .text(days)
-	     .attr("font-family", "nunito")
-	     .attr("font-size", "30px")
-	     .attr("font-weight", "bold")
-	     .attr("fill", "dark-gray");
-
-
-	
+	var textLabels = text
+		.attr("x", 10)
+		.attr("y", 40)
+		.text(formatDate(latest))
+		.attr("font-family", "nunito")
+		.attr("font-size", "22px")
+		.attr("font-weight", "bold")
+		.attr("fill", "dark-gray");	
 });
-
-
-
 
 
 console.log("PLS WORK OMG")
