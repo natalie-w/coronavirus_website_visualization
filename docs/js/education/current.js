@@ -7,7 +7,7 @@
 
 
 d3.csv("/data/covid_19_data.csv", function(data) {
-	console.log(data)
+	// console.log(data)
 
 	var cases = 0;
 	var recoveries = 0;
@@ -37,6 +37,7 @@ d3.csv("/data/covid_19_data.csv", function(data) {
 		if ((d.date.getFullYear() == latest.getFullYear()) &&
 			(d.date.getMonth() === latest.getMonth()) &&
 			(d.date.getDate() == latest.getDate())) {
+			
 			cases += d.cases
 			recoveries += d.recoveries
 			fatalities += d.fatalities
@@ -49,8 +50,8 @@ d3.csv("/data/covid_19_data.csv", function(data) {
 	var classes = ["#total_cases", "#recover", "#fatal"];
 
 	for (var j = 0; j < counts.length; j++) {
-		console.log(counts[j])
-		console.log(classes[j])
+		// console.log(counts[j])
+		// console.log(classes[j])
 
 		var svg = d3.select(classes[j])
 			.append("svg")

@@ -28,7 +28,7 @@ d3.csv("/data/COVID 19 Containment measures data.csv", function(data) {
 		d.target_state = d["Target state"]
 	});
 
-	console.log(data);
+	// console.log(data);
 	// update metrics
 	// var cases = d3.select("#cases")
 	// 	.attr("text", "helo")
@@ -73,7 +73,6 @@ d3.csv("/data/COVID 19 Containment measures data.csv", function(data) {
 	}
 
 	// render table
-
 	var govTable = tabulate(data, ["country","start_date", "keywords", "description"])
 
 	console.log("hmmm")

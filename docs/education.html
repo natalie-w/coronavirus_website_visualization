@@ -20,6 +20,7 @@
 
   <!-- d3 -->
   <script src="http://d3js.org/d3.v4.min.js"></script>
+<!--   <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script> -->
 
 </head>
 
@@ -232,15 +233,43 @@
               <!-- Circle Buttons -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Current Status</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Countries Impacted by Covid-19</h6>
                 </div>
                 <div class="card-body">
-                  <p>Countries Impacted by Covid-19. Probably some text explain stuff.</p>
+                  <p>Please use the dropdown menu to see how different metrics change over time.  You can hover over lines to get more details on each data point.</p>
 
-                  <!-- <div class='tableauPlaceholder' id='viz1585523240327' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusCOVID-19Cases_15851038816980&#47;MapofCases&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CoronavirusCOVID-19Cases_15851038816980&#47;MapofCases' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusCOVID-19Cases_15851038816980&#47;MapofCases&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1585523240327');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
-                BIG TABLEAU MAP
-                </div>
+                  <div class='tableauPlaceholder' id='viz1585859211661' style='position: relative'>
+                    <noscript>
+                      <a href='#'>
+                        <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;GrowthMetricsbyCountry&#47;1_rss.png' style='border: none' />
+                      </a>
+                    </noscript>
+                    <object class='tableauViz'  style='display:none;'>
+                      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                      <param name='embed_code_version' value='3' /> 
+                      <param name='site_root' value='' />
+                      <param name='name' value='CoronavirusGrowthandContainmentMeasures&#47;GrowthMetricsbyCountry' />
+                      <param name='tabs' value='no' />
+                      <param name='toolbar' value='yes' />
+                      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;GrowthMetricsbyCountry&#47;1.png' /> 
+                      <param name='animate_transition' value='yes' />
+                      <param name='display_static_image' value='yes' />
+                      <param name='display_spinner' value='yes' />
+                      <param name='display_overlay' value='yes' />
+                      <param name='display_count' value='yes' /><param name='filter' value='publish=yes' />
+                    </object>
+                  </div>                
+                  <script type='text/javascript'>                    var divElement = document.getElementById('viz1585859211661');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='600px';vizElement.style.maxWidth='1500px';vizElement.style.width='100%';vizElement.style.minHeight='327px';vizElement.style.maxHeight='627px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='600px';vizElement.style.maxWidth='1500px';vizElement.style.width='100%';vizElement.style.minHeight='327px';vizElement.style.maxHeight='627px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                </script>                
               </div>
+              <p>
+              According to researchers, Covid-19 is not mutating very fast.  All else held constant, different places should not have different fatality rates.  From the graph above, we can see that is not true.  Below we will look into other possible factors that may be affecting Covid-19.
+              
+              <a href="https://www.npr.org/sections/goatsandsoda/2020/03/25/820998549/the-coronavirus-is-mutating-but-that-may-not-be-a-problem-for-humans"> source </a>
+              </p>
+              
+              </div>
+
             </div>
           </div> <!-- row -->
 
@@ -250,13 +279,13 @@
               <!-- Cases Over Time -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Cases over Time</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Days Since 100th Case</h6>
                 </div>
                 <div class="card-body">
                   <p>Identify case growth outliers by country and government response.</p>
                   <p>Please click on the countries you want to view the governments' response in.</p>
                   
-                  <div id = "over_time"></div>
+  
 
                 </div>
               </div>
@@ -268,8 +297,9 @@
                 <div class="card-header py-3">
                   <h6 class="m-0 font-weight-bold text-primary">Government Responses</h6>
                 </div>
-                <div class="card-body" id="gov">
-                  <p>Works with any button colors, just use the <code>.btn-icon-split</code> class and the markup in the examples below. The examples below also use the <code>.text-white-50</code> helper class on the icons for additional styling, but it is not required.</p>
+                <div class="card-body">
+
+                  <div class='tableauPlaceholder' id='viz1585855282428' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;Descriptions&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CoronavirusGrowthandContainmentMeasures&#47;Descriptions' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;Descriptions&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1585855282428');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                   
                   <!-- <div id = "gov"> </div> -->
 
