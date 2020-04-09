@@ -56,8 +56,8 @@
           <member alias='Recovered' value='&quot;Recovered&quot;' />
         </members>
       </column>
-      <column alias='Area (sq. mi.)' caption='X Axis' datatype='string' name='[X Axis (copy)]' param-domain-type='list' role='measure' type='nominal' value='&quot;Area (sq. mi.)&quot;'>
-        <calculation class='tableau' formula='&quot;Area (sq. mi.)&quot;' />
+      <column alias='Population Density' caption='X Axis' datatype='string' name='[X Axis (copy)]' param-domain-type='list' role='measure' type='nominal' value='&quot;Population Density&quot;'>
+        <calculation class='tableau' formula='&quot;Population Density&quot;' />
         <aliases>
           <alias key='&quot;Arable (\%)&quot;' value='Arable (%)' />
           <alias key='&quot;Area (sq. mi.)&quot;' value='Area (sq. mi.)' />
@@ -1657,8 +1657,8 @@
             <alias key='&quot;Recovered&quot;' value='Recovered' />
           </aliases>
         </column>
-        <column alias='Area (sq. mi.)' caption='X Axis' datatype='string' name='[X Axis (copy)]' param-domain-type='list' role='measure' type='nominal' value='&quot;Area (sq. mi.)&quot;'>
-          <calculation class='tableau' formula='&quot;Area (sq. mi.)&quot;' />
+        <column alias='Population Density' caption='X Axis' datatype='string' name='[X Axis (copy)]' param-domain-type='list' role='measure' type='nominal' value='&quot;Population Density&quot;'>
+          <calculation class='tableau' formula='&quot;Population Density&quot;' />
           <aliases>
             <alias key='&quot;Arable (\%)&quot;' value='Arable (%)' />
             <alias key='&quot;Area (sq. mi.)&quot;' value='Area (sq. mi.)' />
@@ -4913,8 +4913,8 @@
                 <alias key='&quot;Recoveries in Population&quot;' value='Proportion of Recoveries in Population' />
               </aliases>
             </column>
-            <column alias='Area (sq. mi.)' caption='X Axis' datatype='string' name='[X Axis (copy)]' param-domain-type='list' role='measure' type='nominal' value='&quot;Area (sq. mi.)&quot;'>
-              <calculation class='tableau' formula='&quot;Area (sq. mi.)&quot;' />
+            <column alias='Population Density' caption='X Axis' datatype='string' name='[X Axis (copy)]' param-domain-type='list' role='measure' type='nominal' value='&quot;Population Density&quot;'>
+              <calculation class='tableau' formula='&quot;Population Density&quot;' />
               <aliases>
                 <alias key='&quot;Arable (\%)&quot;' value='Arable (%)' />
                 <alias key='&quot;Area (sq. mi.)&quot;' value='Area (sq. mi.)' />
@@ -4978,7 +4978,7 @@
           <style-rule element='axis'>
             <format attr='auto-subtitle' class='0' field='[federated.1ytmtp011262j41abtif417nqx19].[avg:Calculation_6457739689623769096:qk]' scope='cols' value='true' />
             <encoding attr='space' class='0' field='[federated.1ytmtp011262j41abtif417nqx19].[avg:Calculation_6457739689623769096:qk]' field-type='quantitative' scale='log' scope='cols' type='space' />
-            <format attr='title' class='0' field='[federated.1ytmtp011262j41abtif417nqx19].[avg:Calculation_6457739689623769096:qk]' scope='cols' value='Avg. Area (sq. mi.)' />
+            <format attr='title' class='0' field='[federated.1ytmtp011262j41abtif417nqx19].[avg:Calculation_6457739689623769096:qk]' scope='cols' value='Avg. Population Density' />
             <format attr='title' class='0' field='[federated.1ytmtp011262j41abtif417nqx19].[sum:Calculation_6457739689624723465:qk]' scope='rows' value='Proportion of Population with Covid-19 (Confirmed Cases)' />
             <encoding attr='space' class='0' field='[federated.1ytmtp011262j41abtif417nqx19].[sum:Calculation_6457739689624723465:qk]' field-type='quantitative' scale='log' scope='rows' type='space' />
           </style-rule>
@@ -5308,8 +5308,8 @@
             <member alias='Recovered' value='&quot;Recovered&quot;' />
           </members>
         </column>
-        <column alias='Area (sq. mi.)' caption='X Axis' datatype='string' name='[X Axis (copy)]' param-domain-type='list' role='measure' type='nominal' value='&quot;Area (sq. mi.)&quot;'>
-          <calculation class='tableau' formula='&quot;Area (sq. mi.)&quot;' />
+        <column alias='Population Density' caption='X Axis' datatype='string' name='[X Axis (copy)]' param-domain-type='list' role='measure' type='nominal' value='&quot;Population Density&quot;'>
+          <calculation class='tableau' formula='&quot;Population Density&quot;' />
           <aliases>
             <alias key='&quot;Arable (\%)&quot;' value='Arable (%)' />
             <alias key='&quot;Area (sq. mi.)&quot;' value='Area (sq. mi.)' />
@@ -5384,7 +5384,7 @@
         <zone forceUpdate='true' h='13750' id='11' type='text' w='41900' x='37600' y='7000'>
           <formatted-text>
             <run bold='true' fontcolor='#000000' fontsize='12'>R-Squared:       </run>
-            <run fontcolor='#000000' fontsize='12'>0.083145</run>
+            <run fontcolor='#000000' fontsize='12'>0.214671</run>
             <run>Æ&#10;</run>
             <run bold='true' fontcolor='#000000' fontsize='12'>P-value:             </run>
             <run fontcolor='#000000' fontsize='12'>&lt; 0.0001</run>
@@ -5508,8 +5508,8 @@
             <member alias='Recovered' value='&quot;Recovered&quot;' />
           </members>
         </column>
-        <column alias='Area (sq. mi.)' caption='X Axis' datatype='string' name='[X Axis (copy)]' param-domain-type='list' role='measure' type='nominal' value='&quot;Area (sq. mi.)&quot;'>
-          <calculation class='tableau' formula='&quot;Area (sq. mi.)&quot;' />
+        <column alias='Population Density' caption='X Axis' datatype='string' name='[X Axis (copy)]' param-domain-type='list' role='measure' type='nominal' value='&quot;Population Density&quot;'>
+          <calculation class='tableau' formula='&quot;Population Density&quot;' />
           <aliases>
             <alias key='&quot;Arable (\%)&quot;' value='Arable (%)' />
             <alias key='&quot;Area (sq. mi.)&quot;' value='Area (sq. mi.)' />
@@ -6004,7 +6004,7 @@
       </cards>
       <simple-id uuid='{2A1D6202-5C96-47F8-A07A-831BF7174938}' />
     </window>
-    <window class='worksheet' name='Timeline of Progress'>
+    <window class='worksheet' maximized='true' name='Timeline of Progress'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -6158,13 +6158,13 @@
       <active id='1' />
       <simple-id uuid='{6F2A9724-A912-4C82-A9E6-3F81614AED62}' />
     </window>
-    <window class='dashboard' maximized='true' name='Dashboard 4'>
+    <window class='dashboard' name='Dashboard 4'>
       <viewpoints>
         <viewpoint name='One View'>
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='3' />
+      <active id='-1' />
       <simple-id uuid='{3D0624A1-4AD9-4DCD-A0B0-1DFA144484D1}' />
     </window>
   </windows>
