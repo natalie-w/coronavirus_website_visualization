@@ -19,7 +19,7 @@
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
   <!-- d3 -->
-  <script src="http://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
 <!--   <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script> -->
 
 </head>
@@ -152,7 +152,8 @@
           <!-- Page Heading -->
           <h1 class="h3 mb-4 text-gray-800">Cases by Country</h1>
 
-
+          <!-- Content Row -->
+          
           
 
           <!-- Content Row -->
@@ -163,12 +164,48 @@
               <!-- Circle Buttons -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Countries Impacted by Covid-19</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Country Level Factors Contributing to Covid-19</h6>
                 </div>
                 <div class="card-body">
-                  <p>Identify case growth outliers by country.</p>
+                  <p>Since the first recorded case of Covid-19 in November 2019, there have been more than 1 million reported cases worldwide.  Every day thousands of new cases of this infectious disease are being reported.</p>
 
-                  <div class='tableauPlaceholder' id='viz1585859211661' style='position: relative'>
+                  <figure>
+                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 100rem;" src="img/CasesByCountry.png" alt="Graph of Cases by Country">
+                    <figcaption><a href="https://public.tableau.com/profile/natalie.m.wang#!/vizhome/CoronavirusGrowthandContainmentMeasures/GrowthMetricsbyCountry">Link to Live Dashboard</a></figcaption>
+                  </figure>
+
+                  <p>We can see that different countries have different rates of spread.  Countries labeled in red, US, Spain, and Italy, have some of the fastest growing cases while countries in blue, Japan and South Korea, have some of the slowest.  Please click the link above to explore additional countries in a live dashboard.</p>
+
+                  <p>However, according to researchers, Covid-19 is not mutating very fast compared to other viruses <a href="https://www.npr.org/sections/goatsandsoda/2020/03/25/820998549/the-coronavirus-is-mutating-but-that-may-not-be-a-problem-for-humans">(Huang 2020)</a>.  This means we should not see drastically different fatality or spread rates in different places/countries.  From the graph above, we can see that is not true, some countries are clearly more impacted by Covid-19 than others.  Below, we will look into other possible factors that may be affecting Covid-19.</p>
+
+                  <p>One big difference between countries is how the government responds in times of crisis.  China is currently the most successful case study of a fast growing country "flattening the curve".  Comparing what they did to South Korea (a country with low growth the whole time) and US (a fast growth country), we can see how the government approaches were different.</p>
+
+                  <figure>
+                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 100rem;" src="img/CountryMeasures.png" alt="Graph Goverment Measures for China and South Korea">
+                    <figcaption><a href="https://public.tableau.com/profile/natalie.m.wang#!/vizhome/CoronavirusGrowthandContainmentMeasures/OverviewofGovMeasures">Link to Live Dashboard</a></figcaption>
+                  </figure>
+
+                  <p>We can see that South Korea implemented social distancing measures and made several public announcements early in their curve.  Near the peak of their curve, they mandated remote work and mask-wearing for everyone.  Similarly with China, we can see near the peak of their curve, they suspended businesses and mandated remote schooling and work.  They also announced cash hygiene and public mask-wearing guidelines.  The US has implemented remote work and the suspension of businesses, but they have not required the wearing of masks in public yet.  This seems to indicate social distancing measures and mask wearing may be good protective measures other countries should take.  Please click the link above to explore and compare other countries and their government measures.</p>
+
+                  <figure>
+                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 40rem;" src="img/AreaCases.png" alt="Scatterplot of Area and Cases">
+                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 40rem;" src="img/DensityCases.png" alt="Scatterplot of Population Density and Cases">
+                    <figcaption><a href="https://public.tableau.com/profile/natalie.m.wang#!/vizhome/CoronavirusGrowthandContainmentMeasures/GrowthbyVariables">Link to Live Dashboard</a></figcaption>
+                  </figure>
+  
+                  <p>We can see that Covid-19 confirmed cases is negatively correlated with average area per person by positively correlated with population density.  Basically, countries that are more spread out with more area between people tend to have lower spread rates while densely populated countries tend to have higher spread rates.</p>
+
+                  <figure>
+                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 40rem;" src="img/PhonesCases.png" alt="Scatterplot of Phones and Cases">
+                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 40rem;" src="img/BirthrateCases.png" alt="Scatterplot of Birthrate and Cases">
+                    <figcaption><a href="https://public.tableau.com/profile/natalie.m.wang#!/vizhome/CoronavirusGrowthandContainmentMeasures/GrowthbyVariables">Link to Live Dashboard</a></figcaption>
+                  </figure>
+  
+                  <p>We can also see that the average number of phones per 1000 people is positively correlated with spread while average birthrate is negatively correlated with spread.  Average number of phones could be a proxy for income; i.e. countries with higher income per person tend to have higher number of cases.  Similarly, countries with higher birthrates are correlated with lower Covid-19 cases.  There are studies that show less-developed countries tend to have higher birthrates rates (<a href="https://ifstudies.org/blog/how-income-affects-fertility">Price 2013</a>).  This means Covid-19 appears to be spreading faster in developed countries. Please click the link above to explore more country-level factors.</p>
+
+
+
+                  <!-- <div class='tableauPlaceholder' id='viz1585859211661' style='position: relative'>
                     <noscript>
                       <a href='#'>
                         <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;GrowthMetricsbyCountry&#47;1_rss.png' style='border: none' />
@@ -190,9 +227,9 @@
                     </object>
                   </div>                
                   <script type='text/javascript'>                    var divElement = document.getElementById('viz1585859211661');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='600px';vizElement.style.maxWidth='1500px';vizElement.style.width='100%';vizElement.style.minHeight='327px';vizElement.style.maxHeight='627px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='600px';vizElement.style.maxWidth='1500px';vizElement.style.width='100%';vizElement.style.minHeight='327px';vizElement.style.maxHeight='627px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-                  </script>  
+                  </script>   -->
 
-           
+              
 
               </div>
               
@@ -202,45 +239,7 @@
             </div>
           </div> <!-- row -->
 
-          <div class="row">
-            <div class="col-lg-12">
-
-              <!-- Cases Over Time -->
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Government Response By Country</h6>
-                </div>
-                <div class="card-body">
-                  <p>Explore differences in government responses.</p>
-
-                  <div class='tableauPlaceholder' id='viz1586452233191' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;OverviewofGovMeasures&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CoronavirusGrowthandContainmentMeasures&#47;OverviewofGovMeasures' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;OverviewofGovMeasures&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1586452233191');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='1427px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-12">
-              <!-- Government Responses -->
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Other Correlations with Covid-19</h6>
-                </div>
-                <div class="card-body">
-                  
-                  <p>Locate correlations between country attributes and Covid-19 Rates</p>
-
-                  <div class='tableauPlaceholder' id='viz1586452284272' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;GrowthbyVariables&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CoronavirusGrowthandContainmentMeasures&#47;GrowthbyVariables' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;GrowthbyVariables&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1586452284272');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1027px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-                  
-                  <!-- <div id = "gov"> </div> -->
-
-                  
-
-                </div>
-              </div>
-            </div> 
-
-          </div> 
-          <!-- row -->
+          
 
         </div>
         <!-- /.container-fluid -->
@@ -282,9 +281,9 @@
   <script src="js/sb-admin-2.min.js"></script>
   
   <!-- graphs -->
-  <script src = "/js/education/current.js"></script>
+<!--   <script src = "/js/education/current.js"></script>
   <script src="/js/education/cases_over_time.js"></script>
-  <script src="/js/education/gov_responses.js"></script>
+  <script src="/js/education/gov_responses.js"></script> -->
 
 </body>
 
