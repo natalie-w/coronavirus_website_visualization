@@ -1,9 +1,9 @@
 # Coronavirus Visualization
 Welcome to Jeremiah Joseph Sahabu, Natalie Wang, and George Tao's vizualization project focused on COVID-19. The website can be found at: http://people.ischool.berkeley.edu/~georgetao/w209/index.html
 
-We have three main tasks for this visualization: comparing to other pandemics.
+We have three main tasks for this visualization: exploring growth trends, comparing country responses, and comparing to other pandemics.
 
-## Exploring Growth Trends of COVID-19 - Jeremiah Joseph Sahabu
+## Exploring Growth Trends - Jeremiah Joseph Sahabu
 The primary goal was to explore how COVID-19 grew in different countries. Visualizations were created to show how far along each country is regarding its COVID-19 timeline. Additionally, by creating compelling visualizations, we can help educate the public about how dangerous this pandemic actually is.
 
 
