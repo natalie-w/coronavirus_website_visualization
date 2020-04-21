@@ -91,21 +91,7 @@
         </a>
       </li>
 
-      <!-- Nav Item - Predictions Collapse Menu -->
-<!--       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePredictions" aria-expanded="true" aria-controls="collapsePredictions">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Comparisons</span>
-        </a>
-        <div id="collapsePredictions" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Graphs:</h6>
-            <a class="collapse-item" href="comparisonSARS.html">Comparing to SARS</a>
-            <a class="collapse-item" href="comparisonPandemic.html">Comparing to Pandemics</a>
-          </div>
-        </div>
-      </li>
- -->
+
       <!-- Divider -->
       <hr class="sidebar-divider">
 
@@ -167,11 +153,100 @@
                   <h6 class="m-0 font-weight-bold text-primary">Overview</h6>
                 </div>
                 <div class="card-body" >
-                  <p style="color:black">
+                  <div style="width: 45%;display:inline-block; float:left; height:100%; margin:10px; ">
+                    <p style="color:black; font-size: 30px">Why we should be taking social distancing more seriously.</p>
+                    <br>
+                    <p style="color:black; font-size:20px ">
                     According to <a href="https://www.npr.org/sections/goatsandsoda/2020/03/25/820998549/the-coronavirus-is-mutating-but-that-may-not-be-a-problem-for-humans"> NPR </a>, Covid-19 is not mutating very fast compared to other viruses.  Because of this, the differences in spread rate and fatalities between countries should be due to some other variable.  This visualization attempts to find correlations between other country-level variables and Covid-19 cases, recoveries, and deaths.
-                  </p>
+                    </p>
+                  </div>
+                  <div style="width: 45%;display:inline-block; float:left; height:100%; margin:10px">
+                    <div class='tableauPlaceholder' id='viz1587412963666' style='position: relative;'>
+                      <noscript>
+                        <a href='#'>
+                          <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;GrowthCurvebyCountry&#47;1_rss.png' style='border: none' />
+                        </a>
+                      </noscript>
+                      <object class='tableauViz'  style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='site_root' value='' />
+                        <param name='name' value='CoronavirusGrowthandContainmentMeasures&#47;GrowthCurvebyCountry' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;GrowthCurvebyCountry&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                      </object>
+                    </div>                
+                    <script type='text/javascript'>                    
+                      var divElement = document.getElementById('viz1587412963666');                    
+                      var vizElement = divElement.getElementsByTagName('object')[0];                    
+                      if ( divElement.offsetWidth > 800 ) { 
+                        vizElement.style.width='100%';
+                        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                      } else if ( divElement.offsetWidth > 500 ) { 
+                        vizElement.style.width='100%';
+                        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                      } else { 
+                        vizElement.style.width='100%';
+                        vizElement.style.height='500px';
+                      }                     
+                      var scriptElement = document.createElement('script');                    
+                      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                      vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                    </script>
+
+                  </div>
+                  
+
+                  
                 </div>
               </div>
+
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Explanation</h6>
+                </div>
+                <div class="card-body" >
+                  <p style="color:black; font-size: 30px">Coronavirus has hit wealthy and developed countries the hardest.</p>
+                  <p style="color:black; font-size:20px ">The rate of Covid-19 fatalities per capita is positively correlated with the average number of phones per capita.  This indicates, the more wealthy an area is, the more likely it is to have a higher Coronavirus fatality rate.  Another indication of this, is the fact that Covid-19 fatality rates are negatively correlated with average birthrate per captia.  Poorer areas with less resources tend to have higher average birthrates, thus, lower birthrates indicate more wealthy countries.  One potential reason why is because people in developed/wealthier countries tend to live closer together, often in urban areas.</p>
+                  <div style="width: 100%; height:300px; display: block">
+                    <div style="width: 47%;display:block; float:left; height:100%; margin:5px; ">
+                      <div class='tableauPlaceholder' id='viz1587484593783' style='position: relative;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;DevelopedCountries&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CoronavirusGrowthandContainmentMeasures&#47;DevelopedCountries' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;DevelopedCountries&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1587484593783');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='400px';vizElement.style.height='327px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='400px';vizElement.style.height='327px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    </div>
+                    <div style="width: 47%;display:block; float:left; height:100%; margin:5px">
+                      <div class='tableauPlaceholder' id='viz1587484635224' style='position: relative;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;Dashboard8&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CoronavirusGrowthandContainmentMeasures&#47;Dashboard8' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;Dashboard8&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1587484635224');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='400px';vizElement.style.height='327px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='400px';vizElement.style.height='327px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    </div>
+                  </div>
+                       
+                    <br>
+                    <br>
+                    <p style="color:black; font-size:30px; display: block">Space between people is correlated with lower spread rates and lower fatalities per capita.</p>
+
+                    <p style="color:black; font-size:20px ">Countries that are more spread out with more area between people tend to have lower spread rates while densely populated countries tend to have higher spread rates.  This indicates space between people is vital in slowing down the spread of Covid-19.</p>
+
+
+                  <div style="width: 100%; height:300px; display: block">
+                    <div style="width: 47%;display:block; float:left; height:100%; margin:5px; ">
+                      <div class='tableauPlaceholder' id='viz1587486412519' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;Space&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CoronavirusGrowthandContainmentMeasures&#47;Space' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;Space&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1587486412519');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='400px';vizElement.style.height='327px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='400px';vizElement.style.height='327px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    </div>
+                    <div style="width: 47%;display:block; float:left; height:100%; margin:5px">
+                      <div class='tableauPlaceholder' id='viz1587486428050' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;Dashboard9&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CoronavirusGrowthandContainmentMeasures&#47;Dashboard9' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;Dashboard9&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1587486428050');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='400px';vizElement.style.height='327px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='400px';vizElement.style.height='327px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    </div>
+                  </div>
+
+                  <br>
+                  <br>
+                  <p style="color:black; font-size:20px; display: block; ">Please feel free use the dashboard below to explore additional correlations. Note: p-value <= 0.05 indicates a significant correlation while the r-squared value indicates the percent of variance the correlation explains.</p>
+
+                </div>
+              </div>
+
+              
 
               <!-- tableau dashboard -->
               <div class="card shadow mb-4">
@@ -179,29 +254,9 @@
                   <h6 class="m-0 font-weight-bold text-primary">Correlations Dashboard</h6>
                 </div>
                 <div class="card-body">
-                  <div class='tableauPlaceholder' id='viz1586561012371' style='position: relative'>
-                    <noscript>
-                      <a href='#'>
-                        <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;GrowthbyVariables&#47;1_rss.png' style='border: none' />
-                      </a>
-                    </noscript>
-                    <object class='tableauViz'  style='display:none;'>
-                      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                      <param name='embed_code_version' value='3' /> 
-                      <param name='site_root' value='' />
-                      <param name='name' value='CoronavirusGrowthandContainmentMeasures&#47;GrowthbyVariables' />
-                      <param name='tabs' value='no' />
-                      <param name='toolbar' value='yes' />
-                      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;GrowthbyVariables&#47;1.png' /> 
-                      <param name='animate_transition' value='yes' />
-                      <param name='display_static_image' value='yes' />
-                      <param name='display_spinner' value='yes' />
-                      <param name='display_overlay' value='yes' />
-                      <param name='display_count' value='yes' />
-                    </object>
-                  </div>                
+                  <div class='tableauPlaceholder' id='viz1587487294733' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;GrowthbyVariables&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CoronavirusGrowthandContainmentMeasures&#47;GrowthbyVariables' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusGrowthandContainmentMeasures&#47;GrowthbyVariables&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                              
                   <script type='text/javascript'>                    
-                    var divElement = document.getElementById('viz1586561012371');                    
+                    var divElement = document.getElementById('viz1587487294733');                    
                     var vizElement = divElement.getElementsByTagName('object')[0];                    
                     if ( divElement.offsetWidth > 800 ) { 
                       vizElement.style.width='100%';
@@ -222,7 +277,7 @@
               </div>
 
               <!-- early insights -->
-              <div class="card shadow mb-4">
+<!--               <div class="card shadow mb-4">
                 <div class="card-header py-3">
                   <h6 class="m-0 font-weight-bold text-primary">Early Insights</h6>
                 </div>
@@ -235,7 +290,7 @@
 
                   <p style="color:black">Covid-19 confirmed cases is negatively correlated with average area per person and positively correlated with population density.  Basically, countries that are more spread out with more area between people tend to have lower spread rates while densely populated countries tend to have higher spread rates.  This could be some evidence towards social distancing practices.</p>  
                 </div>
-              </div>
+              </div> -->
               
 
               
